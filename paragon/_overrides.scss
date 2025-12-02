@@ -2,3 +2,35 @@
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
 $primary: #96168b !default;
 $component-active-bg: #96168b !default !default;
+
+
+// ===== Brand colours =====
+$brand-primary: #96168b;          // main brand colour
+$brand-primary-dark: #96168b;     // darker for hover/active
+
+// Map to Bootstrap / Paragon
+$primary: $brand-primary;
+
+// ===== Button variables =====
+// Text colour on primary button
+$btn-primary-color: #fff;
+
+// Normal state
+$btn-primary-bg: $brand-primary;
+$btn-primary-border-color: $brand-primary;
+
+// Hover state
+$btn-primary-hover-bg: $brand-primary-dark;
+$btn-primary-hover-border-color: $brand-primary-dark;
+
+// Active state
+$btn-primary-active-bg: $brand-primary-dark;
+$btn-primary-active-border-color: $brand-primary-dark;
+
+
+// paragon/_overrides.scss
+.btn-primary {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  color: $btn-primary-color;
+}
