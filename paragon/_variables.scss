@@ -3,3 +3,9 @@
 
 $primary: #96168b !default;
 $component-active-bg: #96168b !default !default;
+// paragon/_variables.scss
+$brand-primary: #96168b;         // your main brand color
+$primary: $brand-primary;        // Bootstrap/Paragon primary
+$link-color: $brand-primary;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border-color: $brand-primary;
